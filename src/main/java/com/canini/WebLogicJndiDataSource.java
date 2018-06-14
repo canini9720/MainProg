@@ -18,6 +18,7 @@ public class WebLogicJndiDataSource {
 		    env.put( Context.INITIAL_CONTEXT_FACTORY, "weblogic.jndi.WLInitialContextFactory" );
 		    env.put(Context.PROVIDER_URL, "t3://localhost:7001");
 
+		    
 		    try{
 		      Context context=new InitialContext( env );
 		      //you will need to have create a Data Source with JNDI name testDS
